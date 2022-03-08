@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>home</mat-icon>
+    <!--  <mat-icon>supervised_user_circle</mat-icon> -->
+  </button>
+  <span>Le bon coin 2.0</span>
+  <span class="example-spacer"></span>
+
+  <ul class="header-navigation">
+    <li class="header-navigation-item" *ngIf="(isAuth)">
+      <a class="header-link" routerLink="/all-stuff" routerLinkActive="active" id="catalogue">OBJETS A VENDRE</a>
+    </li>
+    <li class="header-navigation-item" *ngIf="(isAuth)">
+      <a class="header-link" routerLink="/new-thing" routerLinkActive="active" id="toSell">VENDRE UN OBJET</a>
+    </li>
+  </ul>
+  <ul class="header-navigation nav-end">
+    <li class="header-navigation-item" *ngIf="(isAuth)">
+      <a class="header-link" style="cursor: pointer" (click)="onLogout()" id="disconnect">DECONNEXION</a>
+    </li>
+    <li class="header-navigation-item" *ngIf="(!isAuth)">
+      <a class="header-link" routerLink="/login" routerLinkActive="active" id="connexion">CONNEXION</a>
+    </li>
+    <li class="header-navigation-item" *ngIf="(!isAuth)">
+      <a class="header-link" routerLink="/register" routerLinkActive="active" id="inscription">INSCRIPTION</a>
+    </li>
+  </ul>
+</mat-toolbar>
+<div class="hero-image" *ngIf="mode === 'list'">
+  <h2 class="hero-text">
+    La plateforme n° 1 pour vendre vos objets
+  </h2>
+</div>
+

@@ -1,0 +1,24 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+
+<div class="centerFlex" *ngIf="!loading">
+<mat-card>
+  <mat-card-title>Login</mat-card-title>
+  <mat-card-subtitle>authentification</mat-card-subtitle>
+  <form [formGroup]="loginForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input formControlName="email" type="email" matInput placeholder="Email" id="email">
+    </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input formControlName="password" matInput type="password" placeholder="Password" id="input_pawd">
+      </mat-form-field>
+
+    <mat-card-actions align="end">
+      <button mat-button mat-raised-button color="warn"  (click)="onLogin()" [disabled]="loginForm.invalid" id="btn_login">Se connecter</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
+<br>
+</div>

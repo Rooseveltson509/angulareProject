@@ -1,0 +1,78 @@
+{
+  "productList": [
+    {
+      "productName": "one plus",
+      "category": "Electronic",
+      "freshness": "Brand New",
+      "price": 599.99,
+      "comment": "a brand new phone",
+      "date": "2022-02-25T23:00:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "tomato",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 78,
+      "comment": "a brand new tomato",
+      "date": "2022-02-24T23:00:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "Samsung Galaxy S23",
+      "category": "Electronic",
+      "freshness": "Brand New",
+      "price": 1520,
+      "comment": "brand a new samsung",
+      "date": "2022-02-27T23:00:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "Mango",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 5.5,
+      "comment": "brand a fruit",
+      "date": "2022-02-25T23:00:00.000Z",
+      "id": 5
+    },
+    {
+      "productName": "one plus",
+      "category": "Electronic",
+      "freshness": "Brand New",
+      "price": 587,
+      "comment": "a brand new phone",
+      "date": "2022-02-25T23:00:00.000Z",
+      "id": 7
+    },
+    {
+      "productName": "ttest",
+      "category": "Vegetables",
+      "freshness": "Second Hand",
+      "price": 21,
+      "comment": "test",
+      "date": "2022-02-02T23:00:00.000Z",
+      "id": 8
+    },
+    {
+      "productName": "test2",
+      "category": "Vegetables",
+      "freshness": "Brand New",
+      "imageUrl": "C:\\fakepath\\10002207-1-nswitchhwneonbluered-sq.jpg",
+      "price": 222,
+      "comment": "ttttttttttttt",
+      "date": "2022-02-25T23:00:00.000Z",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

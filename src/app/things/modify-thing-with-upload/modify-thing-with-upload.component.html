@@ -1,0 +1,34 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+
+<div class="centerFlex" *ngIf="!loading">
+<mat-card>
+  <mat-card-title>Add Product</mat-card-title>
+  <mat-card-subtitle>add a new product</mat-card-subtitle>
+  <form [formGroup]="thingForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Title</mat-label>
+      <input formControlName="title" matInput placeholder="Name">
+    </mat-form-field>
+
+    <button mat-flat-button color="accent" type="button" (click)="filePicker.click()">Ajouter image</button>
+    <input type="file" #filePicker (change)="onImagePick($event)">
+    <div class="image-preview" *ngIf="imagePreview">
+      <img [src]="imagePreview" alt="">
+    </div>
+  <br/>
+      <mat-form-field appearance="outline">
+        <mat-label>Price</mat-label>
+        <input formControlName="price" matInput type="number" placeholder="Price">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Description</mat-label>
+        <textarea formControlName="description" matInput></textarea>
+      </mat-form-field>
+
+    <mat-card-actions align="end">
+      <button mat-button mat-raised-button color="warn" (click)="onSubmit()" [disabled]="thingForm.invalid">Update</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
+<br>
+</div>
